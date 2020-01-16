@@ -44,6 +44,7 @@ ul{
     margin-top: 29%;
     color:#181F4E;
     padding-left:10px ;
+    font-weight: bold;
 }
 
 .full-logo .row:after{
@@ -77,6 +78,7 @@ section{
 
 section h1{
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 section .subhead{
@@ -150,6 +152,7 @@ section .row{
 
 .blue-container h1{
     transform: skewY(3deg);
+    font-weight: bold;
 }
 
 .grid-container{
@@ -183,14 +186,18 @@ section .row{
     position: relative;
     margin-top:-1em ;
 }
+.programming h3{
+    font-weight: bold;
+}
+.design h2{
+    font-weight: bold;
+}
 .grid-container .white-container h2{
     color:#181F4E;
     font-size:2.5em;
     margin: 0em;
     text-shadow: 5px 4px 3px rgba(0,0,0,0.10);
-}
-.grid-container .overflow{
-   overflow: hidden;
+    font-weight: bold;
 }
 
 #large-orange{
@@ -257,7 +264,8 @@ footer .end-logo{
 }
 
 footer h1{
-    font-size:1.5em
+    font-size:1.5em;
+    font-weight: bold;
 }
 
 footer p{
