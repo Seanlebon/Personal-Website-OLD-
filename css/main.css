@@ -1,24 +1,27 @@
 
 @font-face{
     font-family: "Proxima Nova";
-    src:url('proximanova-regular-webfont.woff') format('woff'),
-     url('proximanova-regular-webfont.woff2') format('woff2'),;
+    src:url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+     url('../fonts/proximanova-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
 }
 
 @font-face{
     font-family: "Proxima Nova";
-    src: url('proxima_nova_bold-webfont.woff2') format('woff2'),
-    url('proxima_nova_bold-webfont.woff') format('woff');
+    src: url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'),
+    url('../fonts/proxima_nova_bold-webfont.woff') format('woff');
     font-weight: bold;
+
 }
+
 @font-face{
     font-family: "Proxima Nova";
-    src: url('proxima_nova_black-webfont.woff2') format('woff2'),
-         url('proxima_nova_black-webfont.woff') format('woff');
-    font-weight: bolder;
+    src: url('../fonts/proxima_nova_black-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_black-webfont.woff') format('woff');
+    font-weight: 200;
 }
 body{
-    font-family:"Proxima Nova";
+    font-family:"Proxima Nova", sans-serif;
     margin:0;
     padding:0;
 }
@@ -185,17 +188,14 @@ section .row{
     position: relative;
     margin-top:-1em ;
 }
-.programming h3{
-    font-weight: bold;
-}
-.design h2{
-    font-weight: bold;
-}
+
 .grid-container .white-container h2{
     color:#181F4E;
-    font-size:2.5em;
+    font-size:2em;
+    font-weight: 200;
     margin: 0em;
     text-shadow: 5px 4px 3px rgba(0,0,0,0.10);
+    
 }
 
 #large-orange{
