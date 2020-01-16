@@ -1,7 +1,21 @@
-body{
+
+@font-face{
     font-family: "Proxima Nova";
-    src: url(../fonts/proxima_nova_bold-webfont.woff),
-        url(../fonts/proximanova-regular-webfont.woff);
+    src: url(../fonts/proximanova-regular-webfont.woff);
+}
+
+@font-face{
+    font-family: "Proxima Nova";
+    src: url(../fonts/proximanova-bold-webfont.woff);
+    font-weight: bold;
+}
+@font-face{
+    font-family: "Proxima Nova";
+    src: url(../fonts/proximanova-black-webfont.woff);
+    font-weight: bolder;
+}
+body{
+    font-family:"Proxima Nova";
     margin:0;
     padding:0;
 }
@@ -29,7 +43,7 @@ ul{
     font-size: 1em;
     margin-top: 29%;
     color:#181F4E;
-    padding-left:5px ;
+    padding-left:10px ;
 }
 
 .full-logo .row:after{
@@ -171,6 +185,9 @@ section .row{
 }
 .grid-container .white-container h2{
     color:#181F4E;
+    font-size:2.5em;
+    margin: 0em;
+    text-shadow: 5px 4px 3px rgba(0,0,0,0.10);
 }
 .grid-container .overflow{
    overflow: hidden;
@@ -207,6 +224,14 @@ section .row{
     top:2em;
     right:0;
     transform: rotate(25deg);
+}
+
+#med-orange-opaque{
+    display:none;
+}
+
+#med-blue-opaque{
+    display:none;
 }
 
 footer{
@@ -289,6 +314,7 @@ footer p{
         width:20%;
         right:2%;
     }
+    
     .grid-container .container .programming,.design {
         font-size:1.2em;
     }
@@ -329,6 +355,7 @@ footer p{
         width: 60%;
         position: relative;
         bottom: 1em;
+        z-index:1;
     }
 
     .blue-container .column:nth-child(2){
@@ -380,6 +407,25 @@ footer p{
         width:20%;
         right:2%;
     }
+
+    #med-orange-opaque{
+        display:inherit;
+        position: absolute;
+        width: 20%;
+        bottom: -5%;
+        left: 20%;
+        transform: rotate(-32deg);
+        opacity: 40%;
+    }   
+
+    #med-blue-opaque{
+        display: inherit;
+        position: absolute;
+        width: 10%;
+        top:5%;
+        right:25%;
+        opacity:40%;
+    }
  }
 
  @media only screen and (min-width:1300px){
@@ -389,7 +435,7 @@ footer p{
     }
     #large-orange{
         position:absolute;
-        width: 30%;
+        width: 32%;
         top: -14%;
     }
 
@@ -426,7 +472,10 @@ footer p{
         position: relative;
         bottom: 4em;     
     }
-    
+   #med-blue{
+       width:12.5%;
+       top:0;
+   }
  }
 
 
