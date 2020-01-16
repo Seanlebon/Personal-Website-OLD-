@@ -95,10 +95,10 @@ section .row{
 .blue-container .container{
     color:white;
     background-color: #181F4E;
-    padding: 6em 0 4em;
+    padding: 6em 0 4em; 
     transform: skewY(-3deg);
     position:relative;
-    bottom:3em;
+    bottom:4em;
     z-index: 1;
 }
 
@@ -168,6 +168,9 @@ section .row{
 .grid-container .programming,.design{
     position: relative;
     margin-top:-1em ;
+}
+.grid-container .white-container h2{
+    color:#181F4E;
 }
 .grid-container .overflow{
    overflow: hidden;
@@ -249,7 +252,12 @@ footer p{
 }
 
 @media only screen and (min-width:640px){
-    .full-logo
+    .full-logo .logo{
+        width:90px;
+    }
+    .full-logo h1{
+        font-size: 1.5em;
+    }
     section h1{
         font-size: 2em;
     }
@@ -381,19 +389,46 @@ footer p{
     }
     #large-orange{
         position:absolute;
-        width: 40%;
+        width: 30%;
         top: -14%;
     }
+
+    #large-blue{
+        position:absolute;
+        width:40%;
+    }
+    #med-orange{
+        width: 15%;
+        left: 2%;
+    }
+
+    #med-blue{
+        width:15%;
+        right:2%;
+    }
+
  }
 
- @media only screen and (min-width:1500px){
+ @media only screen and (min-width:1512px){
     .grid-container .white-container{
         margin: 5em 28%;
     }
-   
+    .blue-container .container{
+        padding: 6em 10em 0em; 
+        position: relative;
+        bottom: 4em;     
+    }
  }
- 
 
- 
+ @media only screen and (min-width:1840px){
+    .blue-container .container{
+        padding: 6em 20em 2em; 
+        position: relative;
+        bottom: 4em;     
+    }
+    
+ }
+
+
 
  
