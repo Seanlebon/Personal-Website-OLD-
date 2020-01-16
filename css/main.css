@@ -13,19 +13,23 @@ ul{
 .container{
     text-align: center;
 }
+.full-logo{
+    margin: 1em 0 0.25em 1em;
+
+}
 .full-logo .logo{
-    width:80px;
+    width:60px;
 }
 
 .full-logo .column{
     float:left;
-    padding:10px;
 }
 
 .full-logo h1{
-    font-size: 1.5em;
-    margin-top: 25%;
+    font-size: 1em;
+    margin-top: 29%;
     color:#181F4E;
+    padding-left:5px ;
 }
 
 .full-logo .row:after{
@@ -58,13 +62,15 @@ section{
 }
 
 section h1{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 section .subhead{
-    position:relative;
-    bottom:0.5em;
-    font-size:1.5em;
+
+    font-size:1em;
+}
+section h1, .subhead{
+    margin: 0 1em;
 }
 
 section .laptop{
@@ -105,9 +111,10 @@ section .row{
 
 .blue-container .row img{
     width:50%; 
+    transform: skewY(3deg);
 }
 
-.blue-container img{
+.blue-container .profile{
     width: 10em;
     transform: skewY(3deg);
 }
@@ -132,24 +139,23 @@ section .row{
 }
 
 .grid-container{
-    background-size: 30px 30px;
-    background-image:
-    
-      linear-gradient(to right, grey 1px, transparent 1px),
-      linear-gradient(to bottom, grey 1px, transparent 1px);
-    margin-top:0;
     padding: 6em 0;
     position: relative;
     overflow: hidden;
+    min-width: 100%;
 }
 
 .grid-container .white-container{
-    background-color: rgb(255,255,255, 0.8);
+    background-color: rgb(24,31,78, 0.03);
     margin: 0 3em;
     padding: 4em 0;
     border-radius: 40px;
     position: relative;
+    text-align: center;
     z-index: 2;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(24,31,78,0.1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(24,31,78,0.1);
+    box-shadow: 10px 10px 5px 0px rgba(24,31,78,0.1);
 }
 
 .grid-container .white-container .programming{
@@ -159,6 +165,10 @@ section .row{
 .grid-container .white-container .design{
     color:rgb(47, 142, 209);
 } 
+.grid-container .programming,.design{
+    position: relative;
+    margin-top:-1em ;
+}
 .grid-container .overflow{
    overflow: hidden;
 }
@@ -176,7 +186,7 @@ section .row{
     left:60%;
     bottom: -8em;
     width:70%;
-    transform: rotate(10deg); 
+    transform: rotate(20deg); 
     z-index: 1;
 }
 
@@ -185,7 +195,7 @@ section .row{
     width:40%;
     bottom: 3em;
     left:0em;
-    transform: rotate(10deg);  
+    transform: rotate(-10deg);  
 }
 
 #med-blue{
@@ -193,6 +203,7 @@ section .row{
     width:25%;
     top:2em;
     right:0;
+    transform: rotate(25deg);
 }
 
 footer{
@@ -202,20 +213,187 @@ footer{
     padding: 2em 0;
     z-index: 2;
 }
+
 footer .row img{
     width: 50%;
 }
+
 footer .row{
-    padding: 0 3em;
+    padding: 2em 3em;
     display:flex;
     justify-content: center;
 }
+
 footer .end-logo{
-    width:120px;
+    width:100px;
 }
 
-@media only screen and(min-width:550){
-    .blue-container p{
-        padding: 0 4em;
-    }
+footer h1{
+    font-size:1.5em
 }
+
+footer p{
+    font-size:1em;
+}
+
+@media only screen and (min-width:560px){
+   .blue-container p{
+       font-size: 1.2em;
+   }
+   #large-orange{
+       position:absolute;
+       top: -8%;
+       left:-20%;
+   }
+
+}
+
+@media only screen and (min-width:640px){
+    .full-logo
+    section h1{
+        font-size: 2em;
+    }
+    
+    section .subhead{
+    
+        font-size:1.5em;
+    }
+    .blue-container p{
+        font-size: 1.2em;
+    }
+    #large-orange{
+        position:absolute;
+        width:50%;
+        top:-8%;
+        left:-8%
+    }
+    #large-blue{
+        position:absolute;
+        width:50%;
+        left:70%;
+        bottom: -8em;
+    }
+    #med-orange{
+        width: 25%;
+        left: 2%;
+    }
+    #med-blue{
+        width:20%;
+        right:2%;
+    }
+    .grid-container .container .programming,.design {
+        font-size:1.2em;
+    }
+
+    footer h1{
+        font-size:2em
+    }
+    
+    footer p{
+        font-size:1.5em;
+    }
+ }
+ @media only screen and (min-width:960px){
+    #large-orange{
+        position:absolute;
+        top: -10%;
+    }
+ 
+ }
+ @media only screen and (min-width:1024px){
+     .blue-container .profile{
+         width: 15em;
+         float:left;
+         margin-left: 5em;
+     }
+
+     .blue-container{
+         height: 25em;
+     }
+
+    .blue-container .row {
+        display:block;
+        float:left;
+        padding: 2em 0;
+    }
+
+    .blue-container .row img{
+        width: 60%;
+        position: relative;
+        bottom: 1em;
+    }
+
+    .blue-container .column:nth-child(2){
+        margin-top: 2em;
+    }
+
+    .blue-container .about-text{
+        text-align:left;
+        position:relative;
+    }
+
+    .blue-container .container{
+        padding: 6em 0.5em 0 2em ;
+    }
+
+    .grid-container .white-container .container{
+       display:flex;
+       justify-content: center;
+    }
+
+    .grid-container .container .programming,.design {
+        padding: 0 5em;
+    }
+
+    .grid-container .white-container{
+        margin: 5em 20%;
+        padding: 2em 0em;
+    }
+
+    #large-orange{
+        position:absolute;
+        width: 40%;
+        top: -12%;
+    }
+
+    #large-blue{
+        position:absolute;
+        width:50%;
+        left:70%;
+        bottom: -40%;
+    }
+
+    #med-orange{
+        width: 20%;
+        left: 2%;
+    }
+
+    #med-blue{
+        width:20%;
+        right:2%;
+    }
+ }
+
+ @media only screen and (min-width:1300px){
+    .grid-container .white-container{
+        margin: 5em 25%;
+        padding: 2em 0em;
+    }
+    #large-orange{
+        position:absolute;
+        width: 40%;
+        top: -14%;
+    }
+ }
+
+ @media only screen and (min-width:1500px){
+    .grid-container .white-container{
+        margin: 5em 28%;
+    }
+   
+ }
+ 
+
+ 
+
+ 
