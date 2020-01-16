@@ -1,0 +1,118 @@
+body{
+    font-family: "Proxima Nova";
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    text-align: center;
+}
+.full-logo .logo{
+    width:80px;
+}
+
+.full-logo .column{
+    float:left;
+    padding:10px;
+}
+
+.full-logo h1{
+    font-size: 1.5em;
+    margin-top: 25%;
+    color:#181F4E;
+}
+
+.full-logo .row:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+.nav-desktop{
+    display:none;
+}
+
+header{
+    display:block;
+    background-color: white;
+    position:fixed;
+    top: 0;
+    width:100%;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    z-index: 3;
+}
+section{
+    margin-top: 15em;
+    color: #181F4E;
+    position:relative;
+    z-index: 2;
+}
+section h1{
+    font-size: 2em;
+}
+
+section .subhead{
+    position:relative;
+    bottom:0.5em;
+    font-size:1.5em;
+    z-index: -2;
+}
+section .laptop{
+    width:120%;
+    margin-left:2.5em;
+}
+section .laptop-popup{
+    width:80%;
+    position:relative;
+    bottom:15%;
+    right: 15%;
+    z-index: -2;
+}
+section .row{
+    display:flex;
+    justify-content: center;
+    margin:5em 5em 0;
+}
+
+.blue-container .container{
+    color:white;
+    background-color: #181F4E;
+    padding: 6em 0 4em;
+    transform: skewY(-3deg);
+    position:relative;
+    bottom:2em;
+    z-index: 1;
+}
+.blue-container{
+    padding-bottom: 1em;
+    background-color: #181F4E;
+}
+
+.blue-container .row img{
+    width:50%; 
+}
+.blue-container img{
+    width: 10em;
+    transform: skewY(3deg);
+}
+
+.blue-container .row{
+    display:flex;
+    justify-content: center;
+}
+.blue-container .column:nth-child(2) {
+    position:relative;
+    top:0.3em;
+}
+.blue-container p{
+    margin: 0 10%;
+    transform: skewY(3deg);
+}
+.blue-container h1{
+    transform: skewY(3deg);
+}
