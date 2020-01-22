@@ -47,7 +47,7 @@ ul{
 
 .full-logo h1{
     font-size: 1em;
-    margin-top: 29%;
+    margin-top: 27.5%;
     color:#181F4E;
     padding-left:10px ;
 }
@@ -93,15 +93,15 @@ section h1, .subhead{
 }
 
 section .laptop{
-    width:120%;
-    margin-left:2.5em;
+    width:200px;
+    margin-left:75px;
 }
 
 section .laptop-popup{
-    width:80%;
+    width:60px;
     position:relative;
     bottom:15%;
-    right: 15%;
+    right:50px;
     z-index: -2;
 }
 
@@ -129,7 +129,7 @@ section .row{
 }
 
 .blue-container .row img{
-    width:50%; 
+    width:80px; 
     transform: skewY(3deg);
 }
 
@@ -141,15 +141,18 @@ section .row{
 .blue-container .row{
     display:flex;
     justify-content: center;
+    
 }
-
+.blue-container .column{
+    margin: 0 2em;
+}
 .blue-container .column:nth-child(2) {
     position:relative;
     top:0.3em;
 }
 
 .blue-container p{
-    margin: 0 10%;
+    margin: 0 5em;
     transform: skewY(3deg);
 }
 
@@ -248,7 +251,7 @@ footer{
 }
 
 footer .row img{
-    width: 50%;
+    width: 60px;
 }
 
 footer .row{
@@ -256,7 +259,9 @@ footer .row{
     display:flex;
     justify-content: center;
 }
-
+footer .column{
+    margin: 0 2em;
+}
 footer .end-logo{
     width:100px;
 }
@@ -278,8 +283,21 @@ footer p{
        top: -8%;
        left:-20%;
    }
-
+   section .laptop{
+       width: 300px;
+       margin-left: 6em;
+   }
+   section .laptop-popup{
+       width: 80px;
+       margin-right: 2em;
+   }
+   .blue-container .row img{
+       width:80px;
+   }
+  
 }
+
+
 
 @media only screen and (min-width:640px){
     .full-logo .logo{
@@ -299,6 +317,10 @@ footer p{
     .blue-container p{
         font-size: 1.2em;
     }
+    .blue-container .row img{
+        width:100px;
+    }
+   
     #large-orange{
         position:absolute;
         width:50%;
@@ -331,6 +353,11 @@ footer p{
     footer p{
         font-size:1.5em;
     }
+
+    footer .row img{
+        width: 80px;
+    }
+    
  }
  @media only screen and (min-width:960px){
     #large-orange{
@@ -357,7 +384,7 @@ footer p{
     }
 
     .blue-container .row img{
-        width: 60%;
+        width: 100px;
         position: relative;
         bottom: 1em;
         z-index:1;
@@ -370,6 +397,7 @@ footer p{
     .blue-container .about-text{
         text-align:left;
         position:relative;
+        bottom: 1em;
     }
 
     .blue-container .container{
