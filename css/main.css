@@ -98,15 +98,15 @@ section h1, .subhead{
 }
 
 section .laptop{
-    width:200px;
+    width:300px;
     margin-left:75px;
 }
 
 section .laptop-popup{
-    width:60px;
+    width:80px;
     position:relative;
     bottom:15%;
-    right:50px;
+    right:80px;
     z-index: -2;
 }
 
