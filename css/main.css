@@ -30,6 +30,11 @@ ul{
     list-style-type: none;
 }
 
+a{
+    text-decoration: underline;
+    color: white;
+}
+
 .container{
     text-align: center;
 }
@@ -272,6 +277,12 @@ footer h1{
 
 footer p{
     font-size:1em;
+}
+
+footer #email:focus{
+    outline: none;
+    color: white;
+    background-color: transparent;
 }
 
 @media only screen and (min-width:560px){
