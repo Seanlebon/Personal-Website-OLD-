@@ -378,6 +378,12 @@ footer #email:focus{
  
  }
  @media only screen and (min-width:1024px){
+    section .laptop{
+        width:400px;
+    }
+    section .laptop-popup{
+        width:120px;
+    }
      .blue-container .profile{
          width: 15em;
          float:left;
@@ -508,12 +514,6 @@ footer #email:focus{
  }
 
  @media only screen and (min-width:1512px){
-    section .laptop{
-        width:400px;
-    }
-    section .laptop-popup{
-        width:120px;
-    }
     .grid-container .white-container{
         margin: 5em 28%;
     }
