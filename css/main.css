@@ -459,9 +459,12 @@ footer p{
         right:25%;
         opacity:40%;
     }
+    footer #email{
+        text-decoration: underline;
+    }
  }
 
- @media only screen and (min-width:1300px){
+ @media only screen and (min-width:1250px){
     .grid-container .white-container{
         margin: 5em 25%;
         padding: 2em 0em;
@@ -485,6 +488,11 @@ footer p{
         width:15%;
         right:2%;
     }
+    .blue-container .about-text{
+        position: relative;
+        top: 1.5em;
+    }
+ 
 
  }
 
@@ -496,6 +504,10 @@ footer p{
         padding: 6em 10em 0em; 
         position: relative;
         bottom: 4em;     
+    }
+    .blue-container .about-text{
+        position: relative;
+        top: 1em;
     }
  }
 
